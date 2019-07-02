@@ -48,7 +48,13 @@ namespace HuellitasPerdidas.GUI
 
         protected void IndexChanged(object sender, EventArgs e)
         {
+            txtID_especie.Text = gv_especies.SelectedRow.Cells[0].Text;
+            txtNombreespecie.Text = gv_especies.SelectedRow.Cells[1].Text;
+        }
 
+        protected void gv_especies_DataBound(object sender, EventArgs e)
+        {
+            
         }
     }
 }
