@@ -8,6 +8,7 @@
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-0">
+                
               <h1 class="mb-0">Panel de ajustes</h1>
             </div>
             

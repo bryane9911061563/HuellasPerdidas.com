@@ -3,6 +3,7 @@
     <link href="../Recursos/css/formulariosstyle.css" rel="stylesheet" />
     <link href="../Recursos/css/argon.css" rel="stylesheet" />
     <link href="../Recursos/css/argon.min.css" rel="stylesheet" />
+    <link href="../Recursos/css/cirularbutton.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -22,7 +23,17 @@
             <div class="card-header bg-white border-0">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">Administracion de razas</h3>
+                      
+
+                    
+                    <h3 class="mb-0">
+                        <a href="PanelAdministrativo.aspx" class="btn btn-default btn-circle">
+                            <img class="fas"rc="../Recursos/img2/Back_22px.png" />
+                          <img "src="../Recursos/img2/Left_22px.png" />
+
+                      </a>&nbsp;&nbsp;&nbsp;&nbsp;Administracion de razas
+
+                    </h3>
                 </div>
 
                       
