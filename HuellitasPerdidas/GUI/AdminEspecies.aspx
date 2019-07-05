@@ -3,10 +3,12 @@
     <link href="../Recursos/css/formulariosstyle.css" rel="stylesheet" />
     <link href="../Recursos/css/argon.css" rel="stylesheet" />
     <link href="../Recursos/css/argon.min.css" rel="stylesheet" />
+        <link href="../Recursos/css/cirularbutton.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="formulariopadding">
+    <div style="padding-left:500px">
         <br />
         <br />
         <br />
@@ -22,7 +24,12 @@
             <div class="card-header bg-white border-0">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">Administracion de especies</h3>
+
+                  <a href="PanelAdministrativo.aspx" class="btn btn-default btn-circle">
+                            <img class="fas"src="../Recursos/img2/Back_22px.png" style="text-align:center;width:50%;margin-bottom:3px" />
+
+                      </a>&nbsp;&nbsp;&nbsp;&nbsp;<h3 class="mb-0">Administracion de especies</h3>
+
                 </div>
 
                       
@@ -42,13 +49,7 @@
         </div>
           
       </div>
-            <div class="row">
-                <div class="col-md-12">
-
-                    <br />
-                    <asp:GridView ID="gv_especies" runat="server" CssClass="table table-hover" OnSelectedIndexChanged="IndexChanged" OnDataBound="gv_especies_DataBound"></asp:GridView>
-                </div>
-            </div>
+            
             
      
     </div>
@@ -56,4 +57,12 @@
 
     </div>
 
+
+    <div class="formulariopadding row" style="margin-left:3px;margin-right:3px;">
+                <div class="col-md-12">
+
+                    <br />
+                    <asp:GridView ID="gv_especies" runat="server" CssClass="table table-hover" OnSelectedIndexChanged="IndexChanged" OnDataBound="gv_especies_DataBound"></asp:GridView>
+                </div>
+            </div>
 </asp:Content>

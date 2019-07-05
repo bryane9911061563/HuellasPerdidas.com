@@ -28,8 +28,7 @@
                     
                     <h3 class="mb-0">
                         <a href="PanelAdministrativo.aspx" class="btn btn-default btn-circle">
-                            <img class="fas"rc="../Recursos/img2/Back_22px.png" />
-                          <img "src="../Recursos/img2/Left_22px.png" />
+                            <img class="fas"src="../Recursos/img2/Back_22px.png" style="text-align:center;width:50%;margin-bottom:3px" />
 
                       </a>&nbsp;&nbsp;&nbsp;&nbsp;Administracion de razas
 
