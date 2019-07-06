@@ -1,0 +1,65 @@
+﻿body {
+    
+}
+
+.sidebar {
+    transition: 2s;
+    position: fixed;
+    z-index: 1;
+    background: #268a17;
+    width: 18%;
+    height: 100%;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+.sideheader {
+    background: #268a17;
+    position: fixed;
+    z-index: 1;
+    background: #268a17;
+    width: 102%;
+    height: 30px;
+}
+
+a{
+   text-decoration:none; 
+}
+li:hover{
+    background:#255b21;
+}
+
+.backbutton {
+    text-align: left;
+    margin-top: 60px;
+    font-size: 32px;
+    margin-left: -55px;
+    font-family:cursive;
+}
+
+h5 {
+    font-weight: 900 !important;
+    font-family: cursive !important;
+}
+
+img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 10px;
+}
+
+h1,h2,h3,h4{
+    font-family:cursive !important;
+}
+ul{
+    padding:0px;
+    padding-top:15px;
+}
+li{
+    list-style:none;
+}
+h3{
+    color:saddlebrown;
+}
+img{
+    width:100%;
+}

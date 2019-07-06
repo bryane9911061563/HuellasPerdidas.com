@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserContent.master.cs" Inherits="PeludosPerdidos.GUI.UserContent" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+     <link href="../Css/UserMain.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="background:#d88e0a">
+            <div class="sidebar">
+                <ul>
+                    <li>
+                         <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/perrito1.jpg"  />
+                        <h5 ><%  Response.Write(info.Nombre+" "+info.Apellido_Paterno+" "+info.Apellido_Materno); %> </h5> 
+                    </li>
+                    <li>
+                        <h5>Publicaciones</h5>
+                    </li>
+                    <li>
+                        <h5>Perfil</h5>
+                    </li>
+                    <li>
+                        <h5>Historial</h5>
+                    </li>
+                    <li>
+                       <a style="width:100%" href="../LogOut.aspx" target="_blank">                     
+                          <h5>Cerrar Sesion</h5>
+                       </a>
+                    </li>
+                </ul>
+            </div>
+            <!---div--- class="sideheader">
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </!---div--->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
