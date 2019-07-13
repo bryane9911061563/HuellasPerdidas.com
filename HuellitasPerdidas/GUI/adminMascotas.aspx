@@ -16,7 +16,7 @@
         <br />
         <br />
         <br />
-        <div class="container-fluid mt--7" style="width:1500px !important" >
+        <div class="container-fluid mt--7" style="width:1410px !important" >
       <div class="row">
         
 
@@ -45,16 +45,14 @@
                     <div class="col-md-12"> 
                        <asp:Image ID="foto_mascota" runat="server" />
                     </div>
-
+                    <div class="row" style="padding-left:280px;padding-right:200px;">
+                        <div class="col-md-12 custom-file" >
+                            <asp:FileUpload ID="fu_fotomascota" runat="server" CssClass="custom-file-input"/>
+                            <asp:Label ID="Label6" runat="server" Text="Buscar foto" CssClass="custom-file-label" for="customFile" data-browse="Examinar"></asp:Label>
+                        </div>
+                    </div>
                 </div>
-                <div class="custom-file" style="padding-left:100px;padding-right:100px;">
-
-                <asp:FileUpload ID="fu_mascota" runat="server" CssClass="custom-file-input"/>
-                <asp:Label ID="lblBuscar" runat="server" Text="Buscar foto" CssClass="custom-file-label" for="customFile" data-browse="Examinar"></asp:Label>         
-
                 <br />
-                <br />
-            </div>
 
                 <div class="row">
                     <div class="col-md-2">
@@ -103,6 +101,18 @@
 
                     </div>
                 </div>
+                <br />
+                <div class="row" style="text-align:center">
+                    <div class="col-md-12">
+
+                        <asp:Button ID="btn_guardar" runat="server" Text="Guardar" CssClass="btn btn-info" />
+                        <asp:Button ID="btn_guardarcambios" runat="server" Text="Guardar cambios" CssClass="btn btn-default" />
+                        <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar" CssClass="btn btn-danger" />
+
+
+                    </div>
+
+                </div>
 
 
 
@@ -115,6 +125,31 @@
      </div>
          </div>
           
+        <br />
+        <br />
+        <br />   
+        <br />
+        <br />
+
+        <div class="container-fluid mt--7" style="width:1410px !important" >
+      <div class="row">
+        
+
+        <div class="col-xl-8 order-xl-1">
+          <div class="card bg-secondary shadow">
+           
+            <div class="card-body">
+                
+                <asp:GridView ID="gv_mascotas" CssClass="table table-hover" runat="server"></asp:GridView>
+
+                
+
+               
+            </div>
+          </div>
+        </div>
+     </div>
+         </div>
       
 
 

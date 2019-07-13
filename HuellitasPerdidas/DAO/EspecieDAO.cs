@@ -27,5 +27,17 @@ namespace HuellitasPerdidas.DAO
             return id;
 
         }
+
+        public int modificar_especie(EspecieBO objespeciebo)
+        {
+            int id = objConectar.EjecutarComando(string.Format("update Especie set nombre='{0}' where Especie_id={1}", objespeciebo.Nombre_especie, objespeciebo.Id_especie));
+            return 1;
+        }
+
+        public int eliminar_especie(EspecieBO objespeciebo)
+        {
+            int id = objConectar.EjecutarComando(string.Format("delete from Especie where Especie_id='" + objBO.Id_especie + "'"));
+            return id;
+        }
     }
 }

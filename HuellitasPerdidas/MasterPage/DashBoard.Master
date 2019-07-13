@@ -1,0 +1,228 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DashBoard.master.cs" Inherits="HuellitasPerdidas.MasterPage.DashBoard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../Recursos/img/logohuellas.png">
+    <link href="../Recursos/RecursosDASHBOARD/plugins/highlightjs/styles/darkula.css" rel="stylesheet" />
+   <link href="../Recursos/RecursosDASHBOARD/css/style.css" rel="stylesheet" />
+</head>
+<body  data-theme-version="light" data-sidebar-style="full" data-layout="horizontal" data-nav-headerbg="color_1" data-headerbg="color_1" data-sibebarbg="color_1" data-sidebar-position="static" data-header-position="static" data-container="wide">
+    <form id="form1" runat="server">
+         
+
+        <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
+                    <span class="logo-compact"><img src="../Recursos/RecursosDASHBOARD/Sin%20título-1.png" /></span>
+                    <span class="brand-title">
+                        <img src="../Recursos/RecursosDASHBOARD/logo.png" />
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+         <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
+                        </div>
+                        <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
+                        <div class="drop-down   d-md-none">
+								<input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+       
+                        <li class="icons ">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="../Recursos/RecursosDASHBOARD/BRYAN%20EDILBERTO%20POOL%20MERCADO.jpg" height="40" width="40" alt="" />
+                            </div>
+                            <div class="drop-down dropdown-profile ">
+                               
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+
+
+
+         <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Dashboard</li>
+                    <li>
+                        <a class="has-arrow"href="../GUI/InicioDash.aspx" aria-expanded="false">
+                            <i class="icon-user menu-icon"></i><span  class="nav-text">Administracion general</span>
+                        </a>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-globe-alt menu-icon"></i><span class="nav-text">Mascotas</span>
+                        </a>
+                        
+                    </li>
+                    <li class="nav-label">Apps</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-envelope menu-icon"></i> <span class="nav-text">Email</span>
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Apps</span>
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-graph menu-icon"></i> <span class="nav-text">Charts</span>
+                        </a>
+                       
+                    </li>
+                    <li class="nav-label">UI Components</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-grid menu-icon"></i><span class="nav-text">UI Components</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-badge menu-icon"></i><span class="nav-text">Widget</span>
+                        </a>
+                    </li>
+                    <li class="nav-label">Forms</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">Forms</span>
+                        </a>
+                       
+                    </li>
+                    <li class="nav-label">Table</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-menu menu-icon"></i><span class="nav-text">Table</span>
+                        </a>
+                        
+                    </li>
+                    <li class="nav-label">Pages</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Pages</span>
+                        </a>
+                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+     </div>
+         <div class="content-body">
+
+           
+
+
+
+
+
+          
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+             </div>
+         <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">BryanEPMercado</a> 2019</p>
+            </div>
+        </div>
+
+
+    </form>
+
+
+
+
+
+
+
+
+     <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="../Recursos/RecursosDASHBOARD/plugins/common/common.min.js"></script>
+    <script src="../Recursos/RecursosDASHBOARD/js/custom.min.js"></script>
+    <script src="../Recursos/RecursosDASHBOARD/js/settings.js"></script>
+    <script src="../Recursos/RecursosDASHBOARD/js/gleek.js"></script>
+    <script src="../Recursos/RecursosDASHBOARD/js/styleSwitcher.js"></script>
+
+    <script src="../Recursos/RecursosDASHBOARD/plugins/highlightjs/highlight.pack.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+     <script>
+         (function ($) {
+             "use strict"
+
+             new quixSettings({
+                 version: "light", //2 options "light" and "dark"
+                 layout: "horizontal", //2 options, "vertical" and "horizontal"
+                 navheaderBg: "color_1", //have 10 options, "color_1" to "color_10"
+                 headerBg: "color_1", //have 10 options, "color_1" to "color_10"
+                 sidebarStyle: "vertical", //defines how sidebar should look like, options are: "full", "compact", "mini" and "overlay". If layout is "horizontal", sidebarStyle won't take "overlay" argument anymore, this will turn into "full" automatically!
+                 sidebarBg: "color_1", //have 10 options, "color_1" to "color_10"
+                 sidebarPosition: "static", //have two options, "static" and "fixed"
+                 headerPosition: "static", //have two options, "static" and "fixed"
+                 containerLayout: "wide",  //"boxed" and  "wide". If layout "vertical" and containerLayout "boxed", sidebarStyle will automatically turn into "overlay".
+                 direction: "ltr" //"ltr" = Left to Right; "rtl" = Right to Left
+             });
+
+
+         })(jQuery);
+    </script>
+
+</body>
+</html>

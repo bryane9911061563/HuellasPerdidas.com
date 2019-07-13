@@ -1,0 +1,15 @@
+.menu-izquierda{
+	
+	padding-bottom: 100%;
+}
+
+.navbar-nav
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0;
+    padding-left: 0;
+
+    list-style: none;
+}

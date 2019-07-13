@@ -67,13 +67,13 @@ namespace HuellitasPerdidas.GUI {
         protected global::System.Web.UI.WebControls.Button btn_agregar;
         
         /// <summary>
-        /// Control _modificar.
+        /// Control btn_modificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button _modificar;
+        protected global::System.Web.UI.WebControls.Button btn_modificar;
         
         /// <summary>
         /// Control btn_eliminar.

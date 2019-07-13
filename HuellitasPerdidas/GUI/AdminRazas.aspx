@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HuellasPerdidas_admin.Master" AutoEventWireup="true" CodeBehind="AdminRazas.aspx.cs" Inherits="HuellitasPerdidas.GUI.AdminRazas" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/HuellasPerdidas_admin.Master" AutoEventWireup="true" enableEventValidation="false" CodeBehind="AdminRazas.aspx.cs" Inherits="HuellitasPerdidas.GUI.AdminRazas" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Recursos/css/formulariosstyle.css" rel="stylesheet" />
     <link href="../Recursos/css/argon.css" rel="stylesheet" />
@@ -49,7 +49,7 @@
                 <asp:TextBox ID="txtnombreraza" runat="server" CssClass="form form-control"></asp:TextBox>
                 <br />
                 <asp:Button ID="btn_agregar" runat="server" Text="Agregar" CssClass="btn " OnClick="btn_agregar_Click" />
-                <asp:Button ID="_modificar" runat="server" Text="Modificar" CssClass="btn" />
+                <asp:Button ID="btn_modificar" runat="server" Text="Modificar" CssClass="btn" OnClick="btn_modificar_Click" />
                 <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar" CssClass="btn btn-warning" />
             </div>
           </div>
@@ -66,7 +66,7 @@
     <br />
     <div class="formulariopadding row" style="margin-left:3px;margin-right:3px;">
         <div class="col-md-12">
-            <asp:GridView ID="gv_razas" runat="server" CssClass="table table-hover"></asp:GridView>
+            <asp:GridView ID="gv_razas" runat="server" CssClass="table table-hover" OnRowDataBound="gv_razas_RowDataBound" OnSelectedIndexChanged="gv_razas_SelectedIndexChanged"></asp:GridView>
         </div>
     </div>
 </asp:Content>
