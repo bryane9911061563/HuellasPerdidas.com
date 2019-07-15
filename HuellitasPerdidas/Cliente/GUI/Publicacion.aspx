@@ -8,7 +8,7 @@
         <div class="col-3"></div>      
         
         <div class="col-9" style=" width: 66%; margin-left: 26%;">        
-            <div style="padding:10%;"><asp:image runat="server" ImageUrl="~/Imagenes/perrito1.jpg"  ></asp:image>
+            <div style="padding:10%;"><asp:image runat="server" ImageUrl="~/Cliente/Imagenes/perrito1.jpg"  ></asp:image>
 
             <asp:Panel ID="Panel2" runat="server">
    

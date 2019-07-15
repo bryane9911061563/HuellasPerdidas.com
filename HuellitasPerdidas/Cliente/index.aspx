@@ -14,7 +14,7 @@
         </h5>
     </asp:Panel>
     
-    <asp:Panel ID="Panel2" runat="server" Height="100%" CssClass="row"  style="margin-top:30px; padding: 0 62px" OnLoad="Page_Load" BorderColor="#E17E15" BackColor="#E17E15">
+    <asp:Panel ID="Panel2" runat="server" Height="100%" CssClass="row"  style="margin-top:30px; padding: 0 62px" OnLoad="Page_Load" BorderColor="#ffffff" BackColor="#ffffff">
     </asp:Panel>
 
     

@@ -25,10 +25,10 @@ namespace PeludosPerdidos.GUI
 
                     for (int i = 0; i < 10; i++)
                     {
-                        newTitle[i] = new HtmlGenericControl("h2 style = 'color: blue;font-size: 21px; text-align: center;margin-top: 0px;    margin-bottom: 0px;'");
+                        newTitle[i] = new HtmlGenericControl("h2 class='puppycardTitle'");
                         newTitle[i].InnerHtml = "Nombre Perrito";
                          newimag[i] = new HtmlGenericControl("img src='../Imagenes/perrito1.jpg' /");
-                         newDiv[i] = new HtmlGenericControl("div class='col-sm-3' style='padding:0px; background:#20930e;border-radius:25px;width: 88%;'");
+                         newDiv[i] = new HtmlGenericControl("div class='puppycard' ");
                          newA[i] = new HtmlGenericControl("a   href='Publicacion.aspx' runat='server' OnClick='algo("+i+ ")'class='col-sm-3' style=' padding: 20PX; '");
 
                         newDiv[i].Controls.Add(newimag[i]);

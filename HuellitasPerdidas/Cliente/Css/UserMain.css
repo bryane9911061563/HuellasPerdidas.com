@@ -3,20 +3,19 @@
 }
 
 .sidebar {
-    transition: 2s;
     position: fixed;
     z-index: 1;
-    background: #268a17;
-    width: 18%;
+    background: white;
+    width: 20%;
     height: 100%;
-    padding: 0 20px;
     overflow-x: hidden;
+    margin-right: -15%;
 }
 .sideheader {
     background: #268a17;
     position: fixed;
     z-index: 1;
-    background: #268a17;
+    background: white;
     width: 102%;
     height: 30px;
 }
@@ -25,7 +24,7 @@ a{
    text-decoration:none; 
 }
 li:hover{
-    background:#255b21;
+    background:#f1e9e9;
 }
 
 .backbutton {
@@ -37,25 +36,65 @@ li:hover{
 }
 
 h5 {
-    font-weight: 900 !important;
-    font-family: cursive !important;
+    font-weight: 400 !important;
+    padding: .65rem 1.5rem !important;
+    color: rgba(0, 0, 0, .5) !important;
+    font-size: 12px !important
 }
 
-img {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    padding-top: 10px;
+.imgUser {
+    border-radius: 100% !important;
+    margin: 0px 22% !important;
+    width: 60%;
 }
 
-h1,h2,h3,h4{
-    font-family:cursive !important;
+.puppycard {
+    padding: 0px;
+    background: #e6dddd;
+    width: 88%;
 }
+.addcard {
+    background: #e6dddd;
+}
+    .addcard:hover {
+        transition: 1s;
+        box-shadow: 6px 9px 5px #ccc;
+        background: #e6dddd;
+        transform: scale(1.1);
+    }
+.addcardTitle {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+}
+.puppycardTitle {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0px;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+.puppycard:hover {
+    background: #e6dddd;
+    transition: 1s;
+    box-shadow: 6px 9px 5px #ccc;
+    transform:scale(1.1);
+}
+
+    h1, h2, h3, h4 {
+        font-family: cursive !important;
+    }
 ul{
     padding:0px;
     padding-top:15px;
+    width:100%;
 }
 li{
     list-style:none;
+    width:100%;
 }
 h3{
     color:saddlebrown;

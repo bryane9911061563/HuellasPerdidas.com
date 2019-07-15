@@ -9,7 +9,20 @@
     <title></title>
      <link href="../Css/UserMain.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <!-- Font -->
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+
+    <link href="../../Recursos/Frontal/common-css/bootstrap.css" rel="stylesheet" />
+
+    <link href="../../Recursos/Frontal/common-css/ionicons.css" rel="stylesheet" />
+
+    <link href="../../Recursos/Frontal/blank-static/css/styles.css" rel="stylesheet" />
+
+    <link href="../../Recursos/Frontal/blank-static/css/responsive.css" rel="stylesheet" /> 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -20,11 +33,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="background:#d88e0a">
+        <div style="background:#ffffff">
             <div class="sidebar">
                 <ul>
                     <li>
-                         <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/perrito1.jpg"  />
+                         <asp:Image ID="Image2" runat="server" ImageUrl="~/Cliente/Imagenes/perrito1.jpg" CssClass="imgUser" />
                         <h5 ><%  Response.Write(info.Nombre+" "+info.Apellido_Paterno+" "+info.Apellido_Materno); %> </h5> 
                     </li>
                     <li>
@@ -37,7 +50,7 @@
                         <h5>Historial</h5>
                     </li>
                     <li>
-                       <a style="width:100%" href="../LogOut.aspx" target="_blank">                     
+                       <a style="width:100%" href="../LogOut.aspx" target="_self">                     
                           <h5>Cerrar Sesion</h5>
                        </a>
                     </li>
